@@ -1,4 +1,31 @@
-* {
-    margin: 0px;
-    padding: 0px;
-  }
+#calculator {
+  position: absolute;
+  background-color: brown;
+  box-sizing: border-box;
+  height: 150px;
+  width: 200px;
+}
+
+#contents {
+  padding-top: 5%;
+  padding-left: 5%;
+}
+
+#equals {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+#numInput {
+  width: 165px;
+}
+
+button {
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+
+

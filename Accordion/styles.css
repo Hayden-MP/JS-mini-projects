@@ -70,3 +70,18 @@ h1 {
     margin-left: 0;
     border: 1px solid grey;
 }
+
+/*
+    Unhides the content when the active class is toggled, sets height
+*/
+.accordion .container.active .content {
+    height: 150px;
+}
+
+/*
+    Changes plus sign to negative sign once active
+*/
+.accordion .container.active .label::before {
+    content: '-';
+    font-size: 30px;
+}

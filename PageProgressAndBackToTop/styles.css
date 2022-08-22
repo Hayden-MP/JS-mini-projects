@@ -1,0 +1,35 @@
+body {
+    height: 5000px; /*A long page to feature scrolling*/
+    background: linear-gradient(#00ff04, #09aad3); /*The whole page is a vertical color gradient*/
+}
+
+.back-to-top {
+    position: fixed; /* button does not move in viewport area */
+    right: 2rem; /* right-justified, 2rem space between right side of screen and button */
+    bottom: 2rem; /* positioned at bottom of screen, spaced 2rem off bottom of page */
+    border-radius: 100%; /* Complete circle */
+    background: #141c38;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    opacity: 100%;
+    transition: opacity 0.5s; /* Smooth fade-in instead of sudden appearance*/
+}
+
+/* styles the svg icon we got from w3.org*/
+.back-to-top-icon {
+    width: 1rem;
+    height: 1rem;
+    color: #7ac9f9;
+}
+
+/* adds style change when hovering */
+.back-to-top:hover {
+    opacity: 60%;
+    transition: 0.5s;
+}
+
+/* button is hidden at top of page */
+.hidden {
+    opacity: 0%;
+}

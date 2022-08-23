@@ -33,3 +33,12 @@ body {
 .hidden {
     opacity: 0%;
 }
+
+/* Styling the progress bar*/
+.progress-bar {
+    height: 1rem;
+    background: white;
+    position: fixed;
+    top: 0; /*Positioned at top of the page */
+    left: 0;
+}

@@ -1,6 +1,7 @@
 
 const showOnPx = 100;
 const backToTopButton = document.querySelector('.back-to-top');
+const pageProgressBar = document.querySelector(".progress-bar")
 
 
 // Below adds show/hide button conditionality 
@@ -13,6 +14,14 @@ document.addEventListener('scroll', () => {
         scrolled from the top. Uncomment below to view changing values. 
         console.log(scrollContainer().scrollTop);
     */
+
+    // Calculates percentage, scrollHeight = complete content of page
+    // and clientHeight = innner height of element in pixels (content visible to us)
+    const scrolledPercentage = (scrollContainer().scrollTop / 
+        (scrollContainer().scrollHeight - scrollContainer().clientHeight)) * 100;
+
+    pageProgressBar.style.width = `${scrolledPercentage}%`;
+    
     if (scrollContainer().scrollTop > showOnPx) {
         backToTopButton.classList.remove('hidden');
     } else {
